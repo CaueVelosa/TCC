@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    background-image: url(images/FUNDO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.HOME{
+  position: absolute;
+  top: 20px;
+  left: 25%;
+}
+
+.HQs{
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+
+.PERSONAGENS{
+    position: absolute;
+    top: 20px;
+    left: 55%;
+}
+
+.JOGOS{
+    position: absolute;
+    top: 20px;
+    left: 70%;
+}
+
+.cabecalho{
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px 0px 0rem;
+}
+
+.container__inicio{
+    display: flex;
+    justify-content: space-between; /* separa esquerda e direita */
+    padding: 0px;
+}
+
+.imagem__homem__aranha{
+    width: 100%;
+    margin-top: 10rem;
+    margin-left: -200px;
+}
+
+.texto__marvel{
+  max-width: 50rem; /* faz quebrar linha */
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 2rem;
+  margin-left: 100px;
+}
+/*    position: absolute;
+    top: 10rem;
+    left: 7rem;
+---------------------------------
+    color: white;
+    position: absolute;
+    top: 15rem;
+    left: 35rem;
+    width: 50rem;
+    font-size: 2rem;
+    text-align: center;
