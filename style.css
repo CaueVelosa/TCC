@@ -49,7 +49,7 @@ body{
 
 .inicio{
     min-height: 120vh;
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)),url(images/imagem\ fundo\ futurista.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0,0.8)),url(images/imagem\ fundo\ futurista.png);
     background-size: cover;
     background-position: center;
     display: flex;
