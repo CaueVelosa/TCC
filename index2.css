@@ -42,22 +42,23 @@ body{
 
 /* ---------------------------------- */
 
-.DESTAQUE{
+.DESTAQUE_filmes{
     font-family: var(--fonte);
     max-width: 80%;
+    margin-top: 100px;
 }
 
-.DESTAQUE h1{
-    margin-left: 20px;
+.DESTAQUE_filmes h1{
+    margin-left: 40px;
 }
 
 .filmes{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
     padding: 40px;
     justify-content: space-between;
-    margin-left: 150px;
+    margin-left: 110px;
 }
 
 
