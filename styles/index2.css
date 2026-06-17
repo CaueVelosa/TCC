@@ -163,6 +163,34 @@ body{
     margin-left: -135px;
 }
 
+.recomendacoes_texto{
+    font-family: var(--fonte);
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-top: -370px;
+    margin-left: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.butao button{
+    background-color: rgb(16, 115, 196);
+    transition: 0.5s;
+    border: none;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.butao button:hover{
+    transform: scale(1.05);
+    background-color: rgb(48, 143, 221);
+}
+/* ------------------------------------------------------ */
+
 
 
 
