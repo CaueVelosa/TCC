@@ -24,10 +24,9 @@ body{
 
 .ull{
     display: flex;
-    gap: 40px;
     list-style: none;
     padding-top: 60px;
-    margin-left: 10rem;
+    margin-left: 4rem;
 }
 
 
@@ -38,7 +37,7 @@ body{
     font-size: 20px;
     text-decoration: none;
     color: #fff;
-    padding: 9rem;
+    padding: 7rem;
 }
 /* ---------------------------------- */
 .DESTAQUE_filmes{
@@ -53,6 +52,7 @@ body{
 
 .bannerfilmes{
     max-width: 100%;
+    
 }
 
 .filmes{
