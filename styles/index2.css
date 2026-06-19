@@ -2,6 +2,7 @@
 
 :root{
     --fonte: 'Bebas Neue', sans-serif;
+    --cor: rgba(32, 32, 32);
 }
 
 
@@ -51,7 +52,7 @@ body{
 }
 
 .bannerfilmes{
-    max-width: 100%;
+    width: 100%;
     
 }
 
@@ -106,7 +107,7 @@ body{
 /* ---------------------------------- */
 .bannerquadrinhos{
     margin-top: 300px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .DESTAQUE_HQS{
@@ -190,7 +191,16 @@ body{
     background-color: rgb(48, 143, 221);
 }
 /* ------------------------------------------------------ */
+.rodape-container{
+    background-color: var(--cor);
+    gap: 20px;
+    margin-top: 20rem;
+    font-family: var(--fonte);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
 
-
-
-
+.rodape_um ul,.contatos ul{
+    list-style: none;
+}
