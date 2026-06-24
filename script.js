@@ -1,4 +1,4 @@
-const imagens = ['images/banner capitao america.png','images/banner quadrinhoss.png']
+const imagens = ['images/banners/banner capitao america.png','images/banners/banner quadrinhoss.png']
 const nomes = ['images/nomes/nome capita america.webp']
 const banner = document.getElementById('banner')
 const nome = document.getElementById('nome')
