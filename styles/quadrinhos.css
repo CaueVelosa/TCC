@@ -134,6 +134,7 @@ body{
 }
 
 .nome button{
+    transition: 0.5s;
     min-width: 500px;
     position: absolute;
     background-color: rgb(255, 0, 0);
@@ -148,9 +149,9 @@ body{
     margin-top: -330px;
 }
 
-.butao button:hover{
+.nome button:hover{
     transform: scale(1.05);
-    background-color: rgb(48, 143, 221);
+    background-color: rgb(197, 0, 0);
 }
 
 /* ------------------------------------------------------ */
