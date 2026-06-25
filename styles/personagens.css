@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=News+Cycle:wght@400;700&display=swap');
 
 :root{
     --fonte-primaria: 'Bebas Neue', sans-serif;
     --fonte-secundaria: 'News Cycle', sans-serif;
     --cor-principal: rgba(32, 32, 32);
+    --fonte-terciaria: 'Antonio', sans-serif;
 }
 
 
@@ -18,25 +20,42 @@ body{
     background-color: #ffffff;
 }
 
+#personageens{
+    color: #e62429;
+    position: relative;
+}
+
+#personageens::after{
+    content: "";
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+
+    background-color: #e62429;
+}
+
 .cabecalho{
     display: flex;
     justify-content: center;
     background-color: rgba(32, 32, 32);
     align-items: center;
-    font-family: var(--fonte-primaria);
+    font-family: var(--fonte-terciaria);
     min-height: 90px;
 }
 
 .ull{
     display: flex;
     list-style: none;
-    padding-top: 60px;
+    padding-top: 0px;
     margin-left: 4rem;
 }
 
 
 .menuu{
-    font-family: var(--fonte-primaria);
+    font-family: var(--fonte-terciaria);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 20px;
@@ -95,7 +114,7 @@ main{
     gap: 50px;
     display: flex;
     padding-left: 20px;
-    margin-left: 450px;
+    margin-left: 260px;
   }
 
   .personagens li {
@@ -110,7 +129,7 @@ main{
 
   #details {
     margin-left: 750px;
-    margin-top:200px;
+    margin-top:100px;
     padding: 15px;
     background: rgb(245, 244, 244);
     border-radius: 8px;

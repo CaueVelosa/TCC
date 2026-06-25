@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=News+Cycle:wght@400;700&display=swap');
 
 :root{
     --fonte: 'Bebas Neue', sans-serif;
     --cor: rgba(32, 32, 32);
+    --fonte-terciaria: 'Antonio', sans-serif;
 }
 
 
@@ -16,25 +18,42 @@ body{
     background-color: #ffffff;
 }
 
+#quadrinhoos{
+    color: #e62429;
+    position: relative;
+}
+
+#quadrinhoos::after{
+    content: "";
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+
+    background-color: #e62429;
+}
+
 .cabecalho{
     display: flex;
     justify-content: center;
     background-color: rgba(32, 32, 32);
     align-items: center;
-    font-family: var(--fonte);
+    font-family: var(--fonte-terciaria);
     min-height: 90px;
 }
 
 .ull{
     display: flex;
     list-style: none;
-    padding-top: 60px;
+    padding-top: 0px;
     margin-left: 4rem;
 }
 
 
 .menuu{
-    font-family: var(--fonte);
+    font-family: var(--fonte-terciaria);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 20px;
