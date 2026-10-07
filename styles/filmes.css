@@ -1,0 +1,127 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=News+Cycle:wght@400;700&display=swap');
+
+    :root{
+        --fonte: 'Bebas Neue', sans-serif;
+        --cor: rgba(32, 32, 32);
+        --fonte-terciaria: 'Antonio', sans-serif;
+    }
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #ffffff;
+    }
+
+    #filmeeee{
+        color: #e62429;
+        position: relative;
+    }
+    
+    #filmeeee::after{
+        content: "";
+        position: absolute;
+        margin-top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        height: 3px;
+        background-color: #e62429;
+    }
+
+
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(32, 32, 32);
+        align-items: center;
+        font-family: var(--fonte-terciaria);
+        min-height: 90px;
+    }
+
+    .ull{
+        display: flex;
+        list-style: none;
+        padding-top: 0px;
+        margin-left: 4rem;
+    }
+
+
+    .menuu{
+        font-family: var(--fonte-terciaria);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        padding: 7rem;
+    }
+    /* ---------------------------------- */
+    .DESTAQUE_filmes{
+        font-family: var(--fonte);
+        position: absolute;
+        background-color: #ffffff;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -80px;
+        margin-left:450px;
+    }
+
+    .bannerfilmes{
+        width: 100%;
+        height: 600px;
+    }
+
+    .filmes{
+        display: grid;
+        grid-template-columns: repeat(6, 160px);
+        padding-top: 20px;
+        gap: 13px;
+    }
+
+
+    .filme{
+        width: 160px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filme:hover{
+        transform: scale(1.05);
+    }
+
+
+    .filme img{
+        width: 160px;
+        height: 250px;
+        display: block;
+    }
+
+
+    .filme h3{
+        color: #000000;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-align: left;
+        width: 160px;
+    }
+
+
+    .filme p{
+        color: #818181;
+        margin-left: -135px;
+    }
+
+    .nome{
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 180px;
+    }

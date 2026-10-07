@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index2.css">
-    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>NEXUS</title>
+    
 </head>
 <body>
 <!----------------------------------------------------------------------->
@@ -14,7 +18,7 @@
                 <nav class="menu" id="menu">
                     <ul class="ull">
                         <li><a class="menuu" id="home" href="index2.html">HOME</a></li>
-                        <li><a class="menuu" id="filmeeee" href="#">FILMES</a></li>
+                        <li><a class="menuu" id="filmeeee" href="filmes.html">FILMES</a></li>
                         <li><a class="menuu" id="personageens" href="personagens.html">PERSONAGENS</a></li>
                         <li><a class="menuu" id="quadrinhoos" href="quadrinhos.html">QUADRINHOS</a></li>
                         <li><a class="menuu" href="#">JOGOS</a></li>
@@ -24,57 +28,186 @@
     </header>   
 <!----------------------------------------------------------------------->
     <main>
-        <div>
-            <section>
-            <img class="nome" id="nome" src="images/nomes/nome spider.webp" alt="nome">
+        <div class="pagina">
+            <section class="introducao">
+                <h1>Principais notícias </h1>
+                <p>Filmes, séries, quadrinhos, jogos e muito mais em um só lugar.</p>
             </section>
-
-            <section>
-            <img class="bannerfilmes" id="banner" src="images/banners/banner spider.png" alt="banner">
+    
+            <section class="destaques">
+                <article class="noticia noticia-principal">
+                    <img src="images/noticia-principal.jpg" alt="Imagem da notícia principal">
+    
+    
+    
+                    <div class="conteudo">
+                        <span class="categoria">CINEMA</span>
+    
+                        <h2>
+                            O FUTURO DO CINEMA: COMO AS NOVAS PRODUÇÕES
+                            ESTÃO MUDANDO HOLLYWOOD
+                        </h2>
+    
+                        <p>
+                            Conheça as produções, novidades e acontecimentos
+                            que estão movimentando o mundo do entretenimento.
+                        </p>
+    
+                        <span class="data">
+                            12 DE JUNHO DE 2026
+                        </span>
+                    </div>
+    
+                </article>
+    
+    
+                <!-- COLUNA DA DIREITA -->
+                <div class="noticias-direita">
+    
+                    <article class="noticia noticia-media">
+    
+                        <img
+                            src="images/noticia-jogos.jpg" alt="Notícia sobre jogos">
+    
+                        <div class="overlay"></div>
+    
+                        <div class="conteudo">
+    
+                            <span class="categoria">JOGOS</span>
+    
+                            <h2>
+                                OS GAMES MAIS AGUARDADOS DO ANO
+                            </h2>
+    
+                            <p>
+                                Confira os principais lançamentos que prometem
+                                movimentar o mundo dos games.
+                            </p>
+    
+                            <span class="data">
+                                10 DE JUNHO DE 2026
+                            </span>
+    
+                        </div>
+    
+                    </article>
+    
+    
+                    <article class="noticia noticia-media">
+    
+                        <img
+                            src="images/noticia-personagens.jpg"
+                            alt="Notícia sobre personagens"
+                        >
+    
+                        <div class="overlay"></div>
+    
+                        <div class="conteudo">
+    
+                            <span class="categoria">PERSONAGENS</span>
+    
+                            <h2>
+                                PERSONAGENS ICÔNICOS QUE MARCARAM GERAÇÕES
+                            </h2>
+    
+                            <p>
+                                Heróis, vilões e anti-heróis que conquistaram
+                                fãs ao redor do mundo.
+                            </p>
+    
+                            <span class="data">
+                                08 DE JUNHO DE 2026
+                            </span>
+    
+                        </div>
+    
+                    </article>
+    
+                </div>
+    
             </section>
-
-
-            <div class="DESTAQUE_filmes">
-
-                <div class="filmes">
-
-                    <div class="filme">
-                        <img src="images/capas/capa spider.webp" alt="filme">
-                        <h3>Homem aranha Um novo Dia</h3>
-                        <p>2025</p>
+    
+    
+            <!-- NOTÍCIAS INFERIORES -->
+            <section class="noticias-menores">
+    
+                <article class="card-menor">
+    
+                    <img
+                        src="images/noticia-streaming.jpg"
+                        alt="Notícia sobre streaming"
+                    >
+    
+                    <div class="card-conteudo">
+    
+                        <span class="categoria">STREAMING</span>
+    
+                        <h3>
+                            AS PRINCIPAIS NOVIDADES DO STREAMING
+                        </h3>
+    
+                        <p>
+                            Produções e lançamentos que estão chamando
+                            atenção do público.
+                        </p>
+    
+                        <span class="data">
+                            07 DE JUNHO DE 2026
+                        </span>
+    
                     </div>
-
-                    <div class="filme">
-                        <img src="images/capas/capa doomsday.webp" alt="filme">
-                        <h3>Vingadores Doomsday</h3>
-                        <p>2026</p>
+    
+                </article>
+    
+    
+                <article class="card-menor">
+    
+                    <img
+                        src="images/noticia-bastidores.jpg"
+                        alt="Notícia sobre bastidores"
+                    >
+    
+                    <div class="card-conteudo">
+    
+                        <span class="categoria">BASTIDORES</span>
+    
+                        <h3>
+                            OS SEGREDOS POR TRÁS DAS GRANDES PRODUÇÕES
+                        </h3>
+    
+                        <p>
+                            Descubra como cenas marcantes são criadas
+                            antes de chegarem às telas.
+                        </p>
+    
+                        <span class="data">
+                            05 DE JUNHO DE 2026
+                        </span>
+    
                     </div>
-
-                    <div class="filme">
-                        <img src="images/capas/capa novo capitao.webp" alt="filme">
-                        <h3>Capitão America Brave new World</h3>
-                        <p>2025</p>
+    
+                </article>
+    
+    
+                <article class="card-menor">
+    
+                    <img
+                        src="images/noticia-games.jpg"
+                        alt="Notícia sobre entretenimento"
+                    >
+    
+                    <div class="card-conteudo">
+                        <span class="categoria">JOGOS</span>
+                        <h3>COMO OS JOGOS ESTÃO MUDANDO O ENTRETENIMENTO</h3>
+    
+                        <p>A indústria dos games se tornou uma das maiores forças da cultura pop atual.</p>
+    
+                        <span class="data">03 DE JUNHO DE 2026</span>
                     </div>
-
-                    <div class="filme">
-                        <img src="images/capas/capa quarteto.webp" alt="filme">
-                        <h3>Quarteto Fantástico</h3>
-                        <p>2025</p>
-                    </div>
-
-                    <div class="filme">
-                        <img src="images/capas/capa thunderbolts.webp" alt="filme">
-                        <h3>ThunderBolts</h3>
-                        <p>2025</p>
-                    </div>
-
-                    <div class="filme">
-                        <img src="images/capas/capa deadpool.webp" alt="filme">
-                        <h3>DeadPool</h3>
-                        <p>2024</p>
-                    </div>
-            </div>
+                </article>
+            </section>
         </div>
+
 <!----------------------------------------------------------------------->
         <section>
             <img class="bannerquadrinhos" src="images/banners/banner quadrinhoss.png" alt="">
