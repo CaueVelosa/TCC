@@ -6,6 +6,7 @@
         --cor: rgba(32, 32, 32);
         --fonte-terciaria: 'Antonio', sans-serif;
         --vermelho: #e62429;
+        --ciano: #12E2DB;
         --preto: #111111;
         --cinza-escuro: #333333;
         --cinza: #777777;
@@ -26,7 +27,7 @@
     }
 
     #filmeeee{
-        color: #e62429;
+        color: var(--vermelho);
         position: relative;
     }
     
@@ -38,7 +39,7 @@
         transform: translateX(-50%);
         width: 70px;
         height: 3px;
-        background-color: #e62429;
+        background-color: var(--vermelho);
     }
 
 
