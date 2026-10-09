@@ -71,6 +71,9 @@
     }
     /* ---------------------------------- */
 
-
+    .titulo{
+        font-family: var(--fonte);
+        font-weight: 900;
+    }
 
     
