@@ -1,0 +1,260 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/jogos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./images/N.png" type="image/x-icon">
+        <title>NEXUS</title>
+    </head>
+    <body>
+    <!----------------------------------------------------------------------->
+        <header class="cabecalho">
+            <div class="logo">
+                <div>
+                    <nav class="menu" id="menu">
+                        <ul class="ull">
+                            <li><a class="menuu" id="home" href="index2.html">HOME</a></li>
+                            <li><a class="menuu" id="filmeeee" href="filmes.html">FILMES</a></li>
+                            <li><a class="menuu" id="personageens" href="personagens.html">PERSONAGENS</a></li>
+                            <li><a class="menuu" id="quadrinhoos" href="quadrinhos.html">QUADRINHOS</a></li>
+                            <li><a class="menuu ativo" href="jogos.html">JOGOS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    <!----------------------------------------------------------------------->
+
+        <main>
+            <!-- ============ JOGO EM DESTAQUE ============ -->
+            <section class="destaque">
+                <!-- Imagem de fundo (aparece desfocada). Tamanho sugerido: 1920x600 -->
+                <div class="fundo espaco">
+                    <img id="fundo-img" src="images/jogos/banners/wolverine.jpg" alt="" onerror="this.style.display='none'">
+                </div>
+
+                <div class="destaque-conteudo">
+                    <div class="destaque-texto">
+                        <span class="categoria" id="plataforma">PLAYSTATION 5</span>
+                        <h1 id="titulo">Marvel's Wolverine</h1>
+                        <p id="descricao">Aventura de ação solo com o mutante mais famoso dos X-Men, com combate brutal e garras de adamantium.</p>
+                        <button>VEJA MAIS</button>
+                    </div>
+
+                    <!-- Capa do jogo. Tamanho sugerido: 600x900 -->
+                    <div class="capa-destaque espaco" data-rotulo="CAPA 600x900">
+                        <img id="capa-img" src="images/jogos/capas/wolverine.jpg" alt="Capa do jogo em destaque" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ CATÁLOGO ============ -->
+            <section class="catalogo">
+                <div class="catalogo-topo">
+                    <h2>CATÁLOGO</h2>
+                    <div class="filtros">
+                        <button class="filtro ativo" data-filtro="todos">TODOS</button>
+                        <button class="filtro" data-filtro="playstation">PLAYSTATION</button>
+                        <button class="filtro" data-filtro="xbox">XBOX</button>
+                        <button class="filtro" data-filtro="pc">PC</button>
+                        <button class="filtro" data-filtro="celular">CELULAR</button>
+                    </div>
+                </div>
+
+                <p class="dica">Clique em um jogo para ele aparecer em destaque no topo.</p>
+
+                <div class="jogos">
+                    <!-- Para adicionar um jogo, copie um bloco <article class="jogo"> inteiro e altere os dados -->
+                    <article class="jogo"
+                        data-plataformas="playstation"
+                        data-titulo="Marvel's Wolverine"
+                        data-plataforma="PLAYSTATION 5"
+                        data-descricao="Aventura de ação solo com o mutante mais famoso dos X-Men, com combate brutal e garras de adamantium."
+                        data-capa="images/jogos/capas/wolverine.jpg"
+                        data-fundo="images/jogos/banners/wolverine.jpg">
+                        <div class="espaco" data-rotulo="CAPA 600x900">
+                            <img src="images/jogos/capas/wolverine.jpg" alt="Capa de Marvel's Wolverine" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Marvel's Wolverine</h3>
+                        <p>2026</p>
+                    </article>
+
+                    <article class="jogo"
+                        data-plataformas="playstation pc"
+                        data-titulo="Marvel's Spider-Man 2"
+                        data-plataforma="PLAYSTATION 5 / PC"
+                        data-descricao="Peter Parker e Miles Morales juntos pelas ruas de Nova York, enfrentando Venom, Kraven e outras ameaças."
+                        data-capa="images/jogos/capas/spider-man-2.jpg"
+                        data-fundo="images/jogos/banners/spider-man-2.jpg">
+                        <div class="espaco" data-rotulo="CAPA 600x900">
+                            <img src="images/jogos/capas/spider-man-2.jpg" alt="Capa de Marvel's Spider-Man 2" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Marvel's Spider-Man 2</h3>
+                        <p>2023</p>
+                    </article>
+
+                    <article class="jogo"
+                        data-plataformas="playstation xbox pc"
+                        data-titulo="Marvel Rivals"
+                        data-plataforma="PLAYSTATION / XBOX / PC"
+                        data-descricao="Jogo de tiro em equipes de super-heróis e vilões, com batalhas 6 contra 6 e de graça para jogar."
+                        data-capa="images/jogos/capas/marvel-rivals.jpg"
+                        data-fundo="images/jogos/banners/marvel-rivals.jpg">
+                        <div class="espaco" data-rotulo="CAPA 600x900">
+                            <img src="images/jogos/capas/marvel-rivals.jpg" alt="Capa de Marvel Rivals" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Marvel Rivals</h3>
+                        <p>2024</p>
+                    </article>
+
+                    <article class="jogo"
+                        data-plataformas="playstation xbox pc"
+                        data-titulo="Marvel's Guardians of the Galaxy"
+                        data-plataforma="PLAYSTATION / XBOX / PC"
+                        data-descricao="Aventura com muita história e humor, em que você lidera os Guardiões da Galáxia como o Senhor das Estrelas."
+                        data-capa="images/jogos/capas/guardioes-da-galaxia.jpg"
+                        data-fundo="images/jogos/banners/guardioes-da-galaxia.jpg">
+                        <div class="espaco" data-rotulo="CAPA 600x900">
+                            <img src="images/jogos/capas/guardioes-da-galaxia.jpg" alt="Capa de Marvel's Guardians of the Galaxy" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Guardiões da Galáxia</h3>
+                        <p>2021</p>
+                    </article>
+
+                    <article class="jogo"
+                        data-plataformas="playstation xbox pc"
+                        data-titulo="Marvel's Midnight Suns"
+                        data-plataforma="PLAYSTATION / XBOX / PC"
+                        data-descricao="RPG tático de cartas em que os Vingadores se unem a heróis sobrenaturais para enfrentar Lilith."
+                        data-capa="images/jogos/capas/midnight-suns.jpg"
+                        data-fundo="images/jogos/banners/midnight-suns.jpg">
+                        <div class="espaco" data-rotulo="CAPA 600x900">
+                            <img src="images/jogos/capas/midnight-suns.jpg" alt="Capa de Marvel's Midnight Suns" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Midnight Suns</h3>
+                        <p>2022</p>
+                    </article>
+
+                    <article class="jogo"
+                        data-plataformas="celular pc"
+                        data-titulo="Marvel Snap"
+                        data-plataforma="CELULAR / PC"
+                        data-descricao="Jogo de cartas rápido e gratuito, com partidas de poucos minutos usando seus heróis e vilões favoritos."
+                        data-capa="images/jogos/capas/marvel-snap.jpg"
+                        data-fundo="images/jogos/banners/marvel-snap.jpg">
+                        <div class="espaco" data-rotulo="CAPA 600x900">
+                            <img src="images/jogos/capas/marvel-snap.jpg" alt="Capa de Marvel Snap" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Marvel Snap</h3>
+                        <p>2022</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ============ NOTÍCIAS DE JOGOS ============ -->
+            <section class="noticias-jogos">
+                <h2>NOTÍCIAS DE JOGOS</h2>
+
+                <div class="cards">
+                    <article class="card-noticia">
+                        <!-- Imagem da notícia. Tamanho sugerido: 800x450 -->
+                        <div class="espaco" data-rotulo="IMAGEM 800x450">
+                            <img src="images/noticias/jogo wolverine.jpg" alt="Notícia sobre o jogo do Wolverine" onerror="this.style.display='none'">
+                        </div>
+                        <div class="card-conteudo">
+                            <span class="categoria">JOGOS</span>
+                            <h3>NOVO JOGO DO WOLVERINE</h3>
+                            <p>No dia 15 de Setembro foi lançado mundialmente o novo jogo do Wolverine para plataforma Playstation.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-noticia">
+                        <div class="espaco" data-rotulo="IMAGEM 800x450">
+                            <img src="images/jogos/noticias/noticia-2.jpg" alt="Imagem da notícia" onerror="this.style.display='none'">
+                        </div>
+                        <div class="card-conteudo">
+                            <span class="categoria">JOGOS</span>
+                            <h3>TÍTULO DA NOTÍCIA 2</h3>
+                            <p>Escreva aqui um resumo curto da notícia.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-noticia">
+                        <div class="espaco" data-rotulo="IMAGEM 800x450">
+                            <img src="images/jogos/noticias/noticia-3.jpg" alt="Imagem da notícia" onerror="this.style.display='none'">
+                        </div>
+                        <div class="card-conteudo">
+                            <span class="categoria">JOGOS</span>
+                            <h3>TÍTULO DA NOTÍCIA 3</h3>
+                            <p>Escreva aqui um resumo curto da notícia.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+    <!----------------------------------------------------------------------->
+        <footer class="rodape-container">
+            <div class="rodape-conteudo">
+                <div class="rodape_um">
+                    <ul>
+                        <li>Sobre Nós</li>
+                        <li>Termos de Privacidade</li>
+                        <li>Parceiros</li>
+                        <li>Contato</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="contatos">
+                    <h2>SIGA-NOS</h2>
+                    <ul>
+                        <li><img src="images/redes sociais/INSTAGRAM.png" alt="Instagram"></li>
+                        <li><img src="images/redes sociais/TWITTER.png" alt="Twitter"></li>
+                        <li><img src="images/redes sociais/WHATSAPP.png" alt="WhatsApp"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // ---- Troca o jogo em destaque ao clicar em um card ----
+            const jogos = document.querySelectorAll('.jogo');
+
+            function trocarImagem(img, src) {
+                img.style.display = '';
+                img.src = src;
+            }
+
+            jogos.forEach(function (jogo) {
+                jogo.addEventListener('click', function () {
+                    document.getElementById('titulo').textContent = jogo.dataset.titulo;
+                    document.getElementById('descricao').textContent = jogo.dataset.descricao;
+                    document.getElementById('plataforma').textContent = jogo.dataset.plataforma;
+                    trocarImagem(document.getElementById('capa-img'), jogo.dataset.capa);
+                    trocarImagem(document.getElementById('fundo-img'), jogo.dataset.fundo);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+
+            // ---- Filtro por plataforma ----
+            const botoes = document.querySelectorAll('.filtro');
+
+            botoes.forEach(function (botao) {
+                botao.addEventListener('click', function () {
+                    botoes.forEach(function (b) { b.classList.remove('ativo'); });
+                    botao.classList.add('ativo');
+
+                    const filtro = botao.dataset.filtro;
+                    jogos.forEach(function (jogo) {
+                        const mostrar = filtro === 'todos' || jogo.dataset.plataformas.split(' ').includes(filtro);
+                        jogo.style.display = mostrar ? '' : 'none';
+                    });
+                });
+            });
+        </script>
+    </body>
+    </html>
