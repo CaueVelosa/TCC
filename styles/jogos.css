@@ -206,7 +206,6 @@ body{
 }
 
 /* ---------------------------------- */
-/* NOTÍCIAS DE JOGOS (mesmo estilo da home) */
 .pagina {
     width: 95%;
     max-width: 1500px;
@@ -325,7 +324,13 @@ body{
     max-width: 30px;
 }
 
-/* ------------------------------------------------------ */
+.ghost_rider_noticia{
+    text-decoration: none;
+    list-style-type: none;
+    color: #000000;
+}
+
+/* ------------------------- RESPONSIVIDADE ----------------------------- */
 @media (max-width: 900px) {
     .capa{
         display: none;
