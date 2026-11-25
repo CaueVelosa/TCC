@@ -437,3 +437,131 @@
     .contatos img{
         max-width: 30px;
     }
+
+    /* ===================== RESPONSIVO: CABEÇALHO E RODAPÉ ===================== */
+/* (este bloco é igual nos 3 arquivos CSS) */
+
+@media (max-width: 1250px) {
+    .menuu{
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecalho{
+        padding: 10px 0;
+    }
+
+    .ull{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        row-gap: 20px;
+    }
+
+    .menuu{
+        padding: 1rem 0.6rem;
+        font-size: 16px;
+    }
+
+    .rodape-conteudo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape_um{
+        margin-right: 0;
+    }
+
+    .rodape_um li{
+        margin-left: 0;
+    }
+
+    .contatos{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .contatos ul{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+/* ===================== RESPONSIVO: PÁGINA INICIAL ===================== */
+
+/* ---------- Notebooks (até 1560px) ---------- */
+@media (max-width: 1560px) {
+    .DESTAQUE_HQS{
+        margin-left: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bannerquadrinhos{
+        height: 450px;
+        object-fit: cover;
+    }
+}
+
+/* ---------- Tablets (até 1100px) ---------- */
+@media (max-width: 1100px) {
+    .bannerquadrinhos{
+        margin-top: 60px;
+        height: 260px;
+    }
+
+    .recomendacoes_texto{
+        position: static;
+        margin: 0;
+        padding: 30px 5%;
+        background-color: rgba(32, 32, 32);
+    }
+
+    .DESTAQUE_HQS{
+        position: static;
+        transform: none;
+        width: fit-content;
+        max-width: 100%;
+        margin: 20px auto 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .hqs{
+        grid-template-columns: repeat(3, 160px);
+        justify-content: center;
+    }
+
+    .rodape-container{
+        margin-top: 40px;
+    }
+}
+
+/* ---------- Celulares (até 700px) ---------- */
+@media (max-width: 700px) {
+    .recomendacoes_texto h1{
+        font-size: 26px;
+    }
+
+    .recomendacoes_texto h2{
+        font-size: 18px;
+    }
+
+    .butao button{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hqs{
+        grid-template-columns: repeat(2, 160px);
+    }
+}
+
+/* ---------- Celulares pequenos (até 360px) ---------- */
+@media (max-width: 360px) {
+    .hqs{
+        grid-template-columns: 160px;
+    }
+}

@@ -215,3 +215,173 @@ body{
 .contatos img{
     max-width: 30px;
 }   
+
+/* ===================== RESPONSIVO: CABEÇALHO E RODAPÉ ===================== */
+/* (este bloco é igual nos 3 arquivos CSS) */
+
+@media (max-width: 1250px) {
+    .menuu{
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecalho{
+        padding: 10px 0;
+    }
+
+    .ull{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        row-gap: 20px;
+    }
+
+    .menuu{
+        padding: 1rem 0.6rem;
+        font-size: 16px;
+    }
+
+    .rodape-conteudo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape_um{
+        margin-right: 0;
+    }
+
+    .rodape_um li{
+        margin-left: 0;
+    }
+
+    .contatos{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .contatos ul{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+/* ===================== RESPONSIVO: QUADRINHOS ===================== */
+
+/* ---------- Notebooks (até 1560px) ---------- */
+@media (max-width: 1560px) {
+    .DESTAQUE_quadrinhos{
+        margin-left: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nome h1,
+    .nome p,
+    .nome button{
+        margin-left: 10%;
+    }
+
+    .capa{
+        left: auto;
+        right: 8%;
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+
+/* ---------- Tablets (até 1100px) ---------- */
+@media (max-width: 1100px) {
+    .bannerquadrinhos{
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .nome{
+        background-color: rgba(32, 32, 32);
+        padding: 30px 5%;
+    }
+
+    .nome h1,
+    .nome p,
+    .nome button{
+        position: static;
+        margin: 0;
+    }
+
+    .nome h1{
+        padding-bottom: 0;
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+
+    .nome p{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nome button{
+        display: block;
+        min-width: 0;
+        width: 300px;
+    }
+
+    .capa{
+        position: static;
+        display: block;
+        min-width: 0;
+        max-width: 220px;
+        width: 220px;
+        margin: 20px auto 0 auto;
+    }
+
+    .DESTAQUE_quadrinhos{
+        position: static;
+        transform: none;
+        width: fit-content;
+        max-width: 100%;
+        margin: 20px auto 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .quadrinhos{
+        grid-template-columns: repeat(3, 160px);
+        justify-content: center;
+    }
+
+    .rodape-container{
+        margin-top: 40px;
+    }
+}
+
+/* ---------- Celulares (até 700px) ---------- */
+@media (max-width: 700px) {
+    .nome h1{
+        font-size: 34px;
+    }
+
+    .nome p{
+        font-size: 17px;
+    }
+
+    .nome button{
+        width: 100%;
+    }
+
+    .capa{
+        display: none;
+    }
+
+    .quadrinhos{
+        grid-template-columns: repeat(2, 160px);
+    }
+}
+
+/* ---------- Celulares pequenos (até 360px) ---------- */
+@media (max-width: 360px) {
+    .quadrinhos{
+        grid-template-columns: 160px;
+    }
+} 
