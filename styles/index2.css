@@ -122,11 +122,6 @@
         transform: scale(1.04);
     }
 
-    .overlay {
-        position: absolute;
-        inset: 0;
-        background:linear-gradient(to top,rgba(0, 0, 0, 0.9) 0%,rgba(0, 0, 0, 0.4) 45%,rgba(0, 0, 0, 0.05) 100%);
-    }
 
     .conteudo {
         position: absolute;
@@ -363,11 +358,6 @@
         width: 160px;
     }
 
-
-    .filme p{
-        color: #818181;
-        margin-left: -135px;
-    }
 
     .recomendacoes_texto{
         font-family: var(--fonte2);

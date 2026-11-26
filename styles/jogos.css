@@ -25,12 +25,12 @@ body{
     color: var(--preto);
 }
 
-#jogos{
+#jogoos{
     color: #e62429;
     position: relative;
 }
 
-#jogos::after{
+#jogoos::after{
     content: "";
     position: absolute;
     margin-top: 30px;
@@ -69,37 +69,11 @@ body{
 }
 /* ---------------------------------- */
 /* JOGO EM DESTAQUE */
-.destaque-jogo{
-    position: relative;
-    height: 600px;
-    overflow: hidden;
-    background-color: #222;
-}
-
-#banner{
-    position: absolute;
-    top: 0;
-    left: 0;
+.bannerjogos{
     width: 100%;
-    height: 100%;
+    height: 600px;
     object-fit: cover;
     filter: blur(10px) brightness(60%);
-    transform: scale(1.1);
-}
-
-.conteudo-destaque{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    max-width: 1100px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.nome{
-    max-width: 550px;
 }
 
 .categoria{
@@ -113,30 +87,52 @@ body{
     margin-bottom: 10px;
 }
 
+
 .nome h1{
+    padding-bottom: 100px;
     font-size: 60px;
     color: #fff;
     font-family: var(--fonte2);
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -460px;
 }
 
 .nome p{
+    max-width: 550px;
     font-size: 20px;
     color: #fff;
     font-family: var(--fonte2);
     letter-spacing: 1px;
-    margin-bottom: 25px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -400px;
+}
+
+.capa{
+    position: absolute;
+    max-width: 350px;
+    min-width: 350px;
+    height: 450px;
+    object-fit: cover;
+    top: 120px;
+    left: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 .nome button{
     transition: 0.5s;
+    min-width: 500px;
+    position: absolute;
     background-color: var(--vermelho);
     border: none;
     color: #fff;
     width: 300px;
     height: 50px;
     border-radius: 5px;
+    margin-left: 400px;
+    margin-top: -330px;
 }
 
 .nome button:hover{
@@ -144,28 +140,22 @@ body{
     background-color: rgb(197, 0, 0);
 }
 
-.capa{
-    width: 280px;
-    height: 420px;
-    object-fit: cover;
-    background-color: #555;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-}
-
 /* ---------------------------------- */
 /* CAPAS DOS JOGOS */
 .DESTAQUE_jogos{
     font-family: var(--fonte2);
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
-    width: fit-content;
-    padding: 20px 20px 10px 20px;
-    margin: -80px auto 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -80px;
+    margin-left: 450px;
 }
 
 .jogos{
     display: grid;
     grid-template-columns: repeat(6, 160px);
+    padding-top: 20px;
     gap: 13px;
 }
 
@@ -206,10 +196,11 @@ body{
 }
 
 /* ---------------------------------- */
+/* OUTRAS NOTÍCIAS */
 .pagina {
     width: 95%;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 300px auto 0 auto;
     padding: 30px 0;
 }
 
@@ -281,6 +272,12 @@ body{
     margin-bottom: 10px;
 }
 
+.noticia_nav{
+    text-decoration: none;
+    list-style-type: none;
+    color: #000000;
+}
+
 /* ------------------------------------------------------ */
 .rodape-container{
     background-color: var(--cor);
@@ -322,39 +319,4 @@ body{
 
 .contatos img{
     max-width: 30px;
-}
-
-.noticia_nav{
-    text-decoration: none;
-    list-style-type: none;
-    color: #000000;
-}
-
-/* ------------------------- RESPONSIVIDADE ----------------------------- */
-@media (max-width: 900px) {
-    .capa{
-        display: none;
-    }
-
-    .jogos{
-        grid-template-columns: repeat(3, 160px);
-    }
-
-    .noticias-menores{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .nome h1{
-        font-size: 40px;
-    }
-
-    .jogos{
-        grid-template-columns: repeat(2, 160px);
-    }
-
-    .noticias-menores{
-        grid-template-columns: 1fr;
-    }
 }

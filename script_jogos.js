@@ -1,6 +1,6 @@
 const banners = ['images/capas_jogos/Marvels_Wolverine_cover_art.jpg','images/capas_jogos/spider-man2.jpg','images/capas_jogos/marvel_rival.jpg','images/capas_jogos/guardioes_da_galaxia.jpg','images/capas_jogos/marvel_midnightsuns.jpg','images/capas_jogos/Marvel_Snap.jpg']
 
-const capas = ['images/capas_jogos/Marvels_Wolverine_cover_art.jpg','images/capas_jogos/spider-man2.jpg','images/capas_jogos/marvel_rival.jpg','images/capas_jogos/guardioes_da_galaxia.jpg','images/capas_jogos/marvel_midnightsuns.jpg','images/capas_jogos/Marvel_Snap.jpg'  ]
+const capas = ['images/capas_jogos/Marvels_Wolverine_cover_art.jpg','images/capas_jogos/spider-man2.jpg','images/capas_jogos/marvel_rival.jpg','images/capas_jogos/guardioes_da_galaxia.jpg','images/capas_jogos/marvel_midnightsuns.jpg','images/capas_jogos/Marvel_Snap.jpg']
 
 const nomes = ["Marvel's Wolverine","Marvel's Spider-Man 2","Marvel Rivals","Guardiões da Galáxia","Midnight Suns","Marvel Snap"]
 
@@ -10,7 +10,6 @@ const banner = document.getElementById('banner')
 const capa = document.getElementById('capa')
 const title = document.getElementById('title')
 const subtitle = document.getElementById('subtitle')
-const plataforma = document.getElementById('plataforma')
 const botoes = document.querySelectorAll('.jogo')
 
 botoes.forEach((botao, index) => {
@@ -19,6 +18,5 @@ botoes.forEach((botao, index) => {
         capa.setAttribute('src', capas[index])
         title.innerText = nomes[index]
         subtitle.innerText = desc[index]
-        plataforma.innerText = plataformas[index]
     })
 })
